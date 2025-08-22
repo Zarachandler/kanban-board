@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { supabase } from "./supabaseclient";
+import { supabase } from "./supabase";
 
 export default function App() {
 const [tasks, setTasks] = useState([]);
