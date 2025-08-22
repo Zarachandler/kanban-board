@@ -9,9 +9,9 @@ const [loading, setLoading] = useState(false);
 const [draggedTask, setDraggedTask] = useState(null);
 
 const columnStyles = {
-    new: { header: "bg-gradient-to-r from-blue-600 to-blue-400", border: "border-blue-400" },
-    inProgress: { header: "bg-gradient-to-r from-yellow-600 to-yellow-400", border: "border-yellow-400" },
-    completed: { header: "bg-gradient-to-r from-green-600 to-green-400", border: "border-green-400" },
+    new: { header: "bg-gradient-to-r from-blue-600 to-red-400", border: "border-blue-400" },
+    inProgress: { header: "bg-gradient-to-r from-red-600 to-yellow-400", border: "border-yellow-400" },
+    completed: { header: "bg-gradient-to-r from-yellow-600 to-green-400", border: "border-green-400" },
 };
 
 // Fetch tasks on page load
@@ -79,7 +79,7 @@ const columns = {
 
 return (
     <div className="p-6 w-full min-h-screen bg-gradient-to-b from-zinc-900 to-zinc-800 text-white">
-     <h1 className="text-3xl font-bold mb-6 text-center">✅Kanban-Board</h1>
+     <h1 className="text-2xl font-bold mb-6 text-center">Kanban-Board</h1>
 
      {/* Add Task Form */}
      <div className="flex gap-2 mb-6 justify-center">
